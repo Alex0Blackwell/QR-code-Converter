@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title>QR-Code</title>
+<link rel="shortcut icon" href="favicon.PNG" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="qrcode.js"></script>
+</head>
+<body>
+<h1>Type into the input below for it to be converted to a qr-code</h1>
+<div id="middle" align="center">
+  <div id="textDiv" align="center"><input id="text" type="text" placeholder="type here" width="50%"/> </div> <br/>
+    <div id="qrcode" align="center" style=" margin-top:15px; margin-bottom:15px;"> </div><br>
+
+<script type="text/javascript">
+  var qrcode = new QRCode(document.getElementById("qrcode"), {
+	width : 250,
+	height : 250,
+});
+
+function makeCode () {
+	var elText = document.getElementById("text");
+
+	if (!elText.value) {
+	  elText.focus();
+	  return;
+	}
+	qrcode.makeCode(elText.value);
+}
+
+makeCode();
+
+$("#text").
+	on("blur", function () {
+		makeCode();
+	}).
+	on("keydown", function (e) {
+		if (e.keyCode == 13) {
+			makeCode();
+		}
+	});
+</script>
+</div>
+</body>

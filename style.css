@@ -1,0 +1,51 @@
+input[type=text] {
+  margin-top: 10px;
+  width: 20%;
+  box-sizing: border-box;
+  border: 2px solid #ffade5;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  background-color: #a0c4ff;
+  width: 55%;
+}
+
+#middle{
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  background-color: #cedfff;
+  border-radius: 25px;
+}
+
+h1{
+  text-align: center;
+  color: #333333;
+  font-family: Century Gothic, sans-serif;
+}
+
+
+@keyframes bgcolor {
+    0% {
+        background-color: #b4ceff
+    }
+
+    100% {
+        background-color: #ffb5ec
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 5s infinite;
+    animation: bgcolor 2.5s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}

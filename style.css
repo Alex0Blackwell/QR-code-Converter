@@ -1,11 +1,37 @@
+@font-face { font-family: daisy; src: url('fonts/paperdaisy-demo.ttf'); }
+@font-face { font-family: daisy; font-weight: bold; src: url('fonts/paperdaisy-demo.ttf');}
+
+body {
+	background-color: #FEDCD2;
+}
+
+input[type=button] {
+	background-color: #BFD8D2;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius: 5px;
+	border: 2px solid #262626;
+	display:inline-block;
+	cursor:pointer;
+	color: #262626;
+	font-family:Arial;
+	font-size:16px;
+	padding:5px 25px;
+	text-decoration:none;
+}
+
+#linkBack {
+  text-align: center;
+}
+
 input[type=text] {
   margin-top: 10px;
   width: 20%;
   box-sizing: border-box;
-  border: 2px solid #ffade5;
+  border: 2px solid #262626;
   border-radius: 4px;
   font-size: 16px;
-  background-color: white;
+  background-color: #FEDCD2;
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
@@ -14,7 +40,7 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-  background-color: #a0c4ff;
+  background-color: #FEDCD2;
   width: 55%;
 }
 
@@ -22,30 +48,14 @@ input[type=text]:focus {
   margin-left: 2%;
   margin-right: 2%;
   margin-top: 2%;
-  background-color: #cedfff;
-  border-radius: 25px;
+  background-color: #BFD8D2;
+  border: 2px solid #262626;
+  border-radius: 5px;
 }
 
 h1{
   text-align: center;
-  color: #333333;
-  font-family: Century Gothic, sans-serif;
-}
-
-
-@keyframes bgcolor {
-    0% {
-        background-color: #b4ceff
-    }
-
-    100% {
-        background-color: #ffb5ec
-    }
-}
-
-body {
-    -webkit-animation: bgcolor 5s infinite;
-    animation: bgcolor 2.5s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+  color: #262626;
+  font-size: 85px;
+  font-family: daisy, sans-serif;
 }

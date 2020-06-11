@@ -1,4 +1,5 @@
 # QR-Code Converter
+![](styles/favicon.PNG)
 
 ## Table of contents
 * [Overview](#overview)

@@ -15,7 +15,7 @@ This is a program that takes text from a textbox and automatically converts it i
 
 > Screenshot of the website
 
-[![Video](.pictures/qr-code-generator "Visit the website!")](https://alex0blackwell.github.io/pages/qrCode/index.html)
+[![Video](.pictures/qr-code-generator.gif "Visit the website!")](https://alex0blackwell.github.io/pages/qrCode/index.html)
 
 ## Technologies
 - **HTML / CSS**

@@ -15,7 +15,7 @@ This is a program that takes text from a textbox and automatically converts it i
 
 > Screenshot of the website
 
-![Screenshot](pictures/mainPage.png "Converts text!")
+[![Video](.pictures/qr-code-generator "Visit the website!")](https://alex0blackwell.github.io/pages/qrCode/index.html)
 
 ## Technologies
 - **HTML / CSS**
@@ -27,6 +27,7 @@ The project is hosted [here](https://alex0blackwell.github.io/pages/qrCode/index
 
 ## Limitations
 - QR-codes can only represent text
+- The amount of information that can be represented by a QR-code decreases as the QR-code grows smaller
 
 ## License
 Licensed under the [GNU General Public License v3.0](LICENSE)

@@ -16,6 +16,7 @@ function makeCode() {
 
 makeCode();
 
-input = document.getElementById("text")
+input = document.getElementById("text");
+input.focus();
 
 input.addEventListener('input', makeCode);
